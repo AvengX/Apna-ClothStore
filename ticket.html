@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raise Ticket - Apna Cloth Store</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Apna Cloth Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="popular.html">Most Popular</a>
+      <a href="cart.html">Cart</a>
+      <a href="order.html">Place Order</a>
+      <a href="ticket.html">Raise Ticket</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Raise a Ticket</h2>
+    <form onsubmit="submitTicket(event)">
+      <textarea placeholder="Describe your issue..." required></textarea><br/>
+      <button type="submit">Submit Ticket</button>
+    </form>
+    <p id="ticket-message"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

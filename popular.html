@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Most Popular - Apna Cloth Store</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1 onclick="location.href='index.html'">Apna Cloth Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="popular.html" class="active">Most Popular</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="order.html">Place Order</a>
+      <a href="ticket.html">Raise Ticket</a>
+    </nav>
+  </header>
+
+  <div class="marquee">
+    <span>🔥 50% OFFER ON SELECTED PRODUCTS! Hurry up! 🔥</span>
+  </div>
+
+  <main>
+    <h2 class="section-title">Most Popular Products</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="lj.jpg" alt="Stylish Jacket" />
+        <div class="product-info">
+          <h3 class="product-name">Stylish Jacket</h3>
+          <p class="product-price">₹1200</p>
+          <button class="btn add-cart-btn" onclick="addToCart('Stylish Jacket', 1200)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="kurti.jpg" alt="Elegant Kurti" />
+        <div class="product-info">
+          <h3 class="product-name">Elegant Kurti</h3>
+          <p class="product-price">₹600</p>
+          <button class="btn add-cart-btn" onclick="addToCart('Elegant Kurti', 600)">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="sweater.jpg" alt="Winter Sweater" />
+        <div class="product-info">
+          <h3 class="product-name">Winter Sweater</h3>
+          <p class="product-price">₹700</p>
+          <button class="btn add-cart-btn" onclick="addToCart('Winter Sweater', 700)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

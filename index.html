@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apna Cloth Store - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1 onclick="location.href='index.html'">Apna Cloth Store</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="popular.html">Most Popular</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    <a href="order.html">Place Order</a>
+    <a href="ticket.html">Raise Ticket</a>
+  </nav>
+</header>
+
+<div class="marquee">
+  <span>🔥 50% OFFER ON SELECTED PRODUCTS! Hurry up! 🔥</span>
+</div>
+
+<main>
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=300&q=80" alt="Casual Shirt" />
+      <div class="product-info">
+        <h3>Casual Shirt</h3>
+        <p>Comfortable cotton casual shirt</p>
+        <div class="price-add">
+          <p class="price">₹550</p>
+          <button onclick="addToCart('Casual Shirt', 550)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="tshirt.jpg" alt="Formal T-shirt" />
+      <div class="product-info">
+        <h3>T-shirt</h3>
+        <p>Elegant and stylish</p>
+        <div class="price-add">
+          <p class="price">₹320</p>
+          <button onclick="addToCart('Formal T-shirt', 320)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=300&q=80" alt="Blue Jeans" />
+      <div class="product-info">
+        <h3>Blue Jeans</h3>
+        <p>Denim slim fit jeans</p>
+        <div class="price-add">
+          <p class="price">₹900</p>
+          <button onclick="addToCart('Blue Jeans', 900)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=300&q=80" alt="Summer Dress" />
+      <div class="product-info">
+        <h3>Summer Dress</h3>
+        <p>Light and breezy cotton dress</p>
+        <div class="price-add">
+          <p class="price">₹750</p>
+          <button onclick="addToCart('Summer Dress', 750)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="lj.jpg" alt="Leather Jacket" />
+      <div class="product-info">
+        <h3>Leather Jacket</h3>
+        <p>Classic black leather jacket</p>
+        <div class="price-add">
+          <p class="price">₹1500</p>
+          <button onclick="addToCart('Leather Jacket', 1500)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
